@@ -1,0 +1,153 @@
+% This first statement determines the overall format of the document.
+% There are a number of built in types e.g., article.  But many journals
+% and conferences have their own documentclass definition.
+% We will be using IEEETtran.  Note that, in order to use IEEEtran, you
+% will need the IEEEtran.bst and IEEEtran.cls files in the same folder as
+% your main file.
+
+% The % character is the start of a comment.
+% If you want to have Latex print % you need to use \ before the % symbol.
+
+
+\documentclass{IEEEtran}
+%\documentclass{article}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{mdframed}
+
+\title{Sample \LaTeX\ Document}
+\author{Mike Heroux}
+\date{}
+
+\begin{document}
+\bibliographystyle{plain}
+\maketitle
+\pagestyle{plain}
+
+\begin{abstract}
+This document briefly describes how to write a technical report using \LaTeX.  It is certainly not a comprehensive description of either good technical writing or \LaTeX.  The former topic is covered very well in~\cite{High93} and the latter in~\cite{Lamp86}.
+\end{abstract}
+
+\section{Introduction}
+
+This is the introduction to your report.  In this section you will tell the reader what you are going to say in the body.  If it is a long report, you might even sketch out what you will say, section by section.  Generally you will write the introduction and conclusions {\it after} the body.
+
+\section{The Body--Background and Notation}
+Here you will discuss your findings.  You will probably have multiple sections.  The first section will usually describe the {\it general} problem you are addressing, giving the reader some background and context for the coming sections.  You should also list any notation that is unusual or new.
+
+Somewhere in this section you should probably include the following Equation~\ref{equation1}.  You can always refer back to it by using the notation
+\begin{verbatim}
+~\ref{equation1}
+\end{verbatim}
+
+\begin{equation}
+\label{equation1}
+A = U \Sigma V^T
+\end{equation}
+where $A$ is $m$-by-$n$ with singular values $\sigma_1 \ge \sigma_2 \ge \ldots \ge \sigma_n \ge 0$, $U$ and $V$ are orthogonal matrices and $\Sigma = diag(\sigma_1,\sigma_2 \ge \ldots, \sigma_n)$.
+
+\section{The Body--Problem Setup and Solution}
+
+Once you have the background material complete, you should set up the problem you are solving and discuss what particular issues you are studying.  In the case of the LSI project, you should discuss what { \it specific } questions you will address and how you will find the answers.
+
+Somewhere in this section you should probably include the following Equation~\ref{equation2}:
+\begin{equation}
+\label{equation2}
+A_k = U_k \Sigma_k V_k^T
+\end{equation}
+where $A_k$ is an $m$-by-$n$ matrix of rank $k$ with singular values $\sigma_1 \ge \sigma_2 \ge \ldots \ge \sigma_k \ge 0$, $U_k$ and $V_k$ are the first $k$ columns of $U$ and $V$, respectively, from Equation~\ref{equation1}, and $\Sigma_k = diag(\sigma_1,\sigma_2 \ge \ldots, \sigma_k)$.
+
+
+
+
+\section{The Body--Computational Results}
+
+In this section you should present your computational results and tell the reader your findings based on these results.  Be very specific here.  Also, the use of tables is a great idea in this section (as well as in other places) so you might put in something like this:
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|l||c|c|c|c|c|} \hline
+              &\multicolumn{5}{|c|}{Value of $k$ in
+                                    Equation~\ref{equation2}.}\\ \hline
+{\em Term-Doc Matrix} &  4 & 8 & 16 & 32 & 64 \\ \hline\hline
+     CRAN             &  8 &10 & 12 & 14 & 16 \\ \hline
+     CISI             &  9 &11 & 13 & 15 & 17 \\ \hline
+\end{tabular}
+\caption{\label{table:docs_returned} Number of Documents Returned as a
+function of $k$ for each of the Term-Document Matrices.}
+\end{center}
+\end{table}
+
+
+\section{Figures}
+
+\begin{wrapfigure}{r}{0.25\textwidth}
+
+\centering
+\includegraphics[frame, scale=0.1]{LaTeX_Lion.pdf}
+\caption{\footnotesize This figure is drawn from a PDF file that 
+was included, scaled and inserted into wrapped text.  Use the \LaTeX\ 
+source as a starting point for inserting your own figures.}
+\label{fig1}
+
+\end{wrapfigure}
+Inserting figures into \LaTeX\ documents can be complicated.  One strategy (which is a good general strategy for working with \LaTeX\ documents) is to refer to existing documents as templates for specific types of constructs.  For example, you can refer back to this document to see how Figure~\ref{fig1} is expressed in \LaTeX\ source code. Web searches are also an excellent resource for getting detailed information about \LaTeX\ strategies.  You don't have to struggle alone in trying to get \LaTeX\ to work!
+
+
+\begin{figure}[h]
+
+\centering
+\begin{mdframed}
+\small
+\begin{verbatim}
+\begin{wrapfigure}{r}{0.25\textwidth}
+\centering
+\includegraphics[scale=0.1]{LaTeX_Lion.pdf}
+\caption{\footnotesize This figure is drawn 
+from a PDF file that was included, scaled 
+and inserted into wrapped text.  Use the 
+\LaTeX\ source as a starting point for 
+inserting your own figures.}
+\label{fig1}
+\end{wrapfigure}
+\end{verbatim}
+\end{mdframed}
+\caption{\footnotesize The \LaTeX\ source shown in this figure was used to generate Figure~\ref{fig1}.  Note that \LaTeX\ places figures for you.  You do not have direct control over figure placement, but can ``coach'' \LaTeX\ when you get some experience behind you.}
+\label{fig2}
+\end{figure}
+Figure~\ref{fig2} shows the \LaTeX\ source that generated Figure~\ref{fig1}.
+
+
+\section{The Conclusion}
+
+Here you will synthesize what you have already said, bringing out the most relevant points and conclusions you have made, and explicitly making points that may have been implicit.  You may want to enumerate or list your conclusions.  If so you could do so as follows:
+
+
+\begin{enumerate}
+\item This is an enumerated list.
+\item All items are listed with numbers.
+\end{enumerate}
+
+\begin{itemize}
+\item This is an itemized list.
+\item All items start with a bullet.
+\begin{itemize}
+\item Note:  It is possible to nest these lists.
+\begin{enumerate}
+\item To many depths.
+\end{enumerate}
+\end{itemize}
+\end{itemize}
+
+
+% This line is used to build the bibliography.  In this case, we use the 
+% \bibliography command to include the file sample.bib, which contains our
+% bibtex database.  The bibtex command (which our Latex IDE runs for us) processes
+% our Latex document and scans our Bibtex file for matching citations, and then
+% generates the bibligraphy based on the style selection we made at the top
+% of the document.
+
+\bibliography{sample}
+
+\end{document}
