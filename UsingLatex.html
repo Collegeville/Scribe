@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Using Latex</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/submenu.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div id="navbar"></div>
+
+<div class="container">
+    <h1 class="text-center">CSCI 373: Using Latex</h1>
+    <h2 class="text-center">Michael A. Heroux</h2>
+    <br>
+    <br>
+    <p>
+        This <a href="http://www.users.csbsju.edu/~mheroux/spring2016_csci373/sample.tex.htm">sample LaTeX input file</a>
+        and its related <a href="http://www.users.csbsju.edu/~mheroux/spring2016_csci373/sample.bib.htm">BibTeX file</a>
+        show the basic usage of LaTeX and provides two references,
+        although there are numerous online resources. When compiled using LaTeX,
+        the source file is compiled to this
+        <a href="http://www.users.csbsju.edu/~mheroux/spring2016_csci373/sample.pdf">output PDF file.</a>
+    </p>
+    <h4>Getting started</h4>
+    An easy way to get started with LaTeX  is to use an online LaTeX environment such as
+    <a href="https://www.overleaf.com/">Overleaf</a>.
+    <br>
+    <h4>Installing LaTeX on your own system</h4>
+    All LaTeX IDEs (see below) require an installation of the LaTeX compiling environment.
+    <br>
+    <br>
+    <strong>Linux:</strong> LaTeX is typically installed on most Linux systems already.
+    If not, it is available using the package manager of your flavor of Linux.
+    <br>
+    <strong>Mac:</strong> MacTeX is the standard LaTeX installation for Macs. A large but easily installed package is
+    <a href="http://www.tug.org/mactex/">here</a>
+    <br>
+    <strong>Window:</strong>
+    <a href="http://miktex.org/">MicTeX</a> is commonly used on Windows.
+    <br>
+    <strong>Tablets:</strong>
+    <a href="https://itunes.apple.com/us/app/tex-writer-latex-editor-compiler/id552717222?mt=8">TeX Writer</a>  TeX Writer and
+    <a href="https://itunes.apple.com/us/app/texpad-latex-editor/id550419159?mt=8">Texpad</a>
+    are two well regarded apps for iOS.  I am not familiar with Android versions.
+
+    <h4>Command Line Compilation of your LaTeX source</h4>
+    Command line environments like Linux terminal windows, Mac Terminal and Cygwin on Windows
+    have a native LaTeX environment using the command pdflatex and bibtex.
+    This is an efficient way to compile LaTeX source files for advanced users.
+    Typically a makefile drives the whole process.
+    <br>
+
+    <h4>LaTeX IDEs</h4>
+    Although it is possible to use a plain editor and compile LaTeX files directly (and there is some merit to this approach),
+    many people prefer to use an <em>integrated development environment </em>(IDE).
+
+    <h4>TeXStudio</h4>
+    My favorite LaTeX IDE is
+    <a href="http://texstudio.sourceforge.net/">TexStudio</a>
+    . It is free software available for Windows, Mac and Linux.
+    It uses the underlying LaTeX compiling environment and provides lots of ease-of-use features.
+
+    <strong>TeXShop:</strong>
+    Macs have the popular <a href="http://pages.uoregon.edu/koch/texshop/">TeXShop</a>, which is also free to download.
+
+    <strong>WinEdt:</strong> Windows systems have <a href="http://www.winedt.com/">WinEdt</a>,
+    which is available individually as a free trial version and at a modest cost for a full license.
+    This used to be my favorite editor until TeXStudio came along.
+    A nice free tool for managing BibTeX references is <a href="http://www.jabref.org/"> JabRef</a>.
+
+    <h4>First Example: sample.tex</h4>
+    Download this zip file to your desktop: <a href="zip.sample">zip.sample</a>
+
+    <h4>More Example Projects</h4>
+    In addition to the simple example, the following gzipped tar files contain helpful starting points:
+    <ul>
+        <li>
+            <a href="">Baseline IEEE example for submitting papers to IEEE publications.</a> // Link is die
+        </li>
+        <li>
+            <a href="data/HerouxPaper.zip">A paper of Dr. Heroux's</a>
+        </li>
+        <li>
+            LaTeX can also be used to develop high-quality presentations.
+            <a href="data/CSC11.zip">Here is an example</a>
+        </li>
+    </ul>
+</div>
+<script>
+    $('#navbar').load('templates/navbar.html');
+</script>
+
+</body>
+</html>
