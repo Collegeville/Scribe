@@ -32,6 +32,32 @@
                 for creating a Latex file.
                 It also provides some basic Docker command to help the beginners set up a Docker environment
             </p>
+            <h4>Getting started with Docker</h4>
+            <a href="https://en.wikipedia.org/wiki/Docker_(software)">Docker</a> become more and more common
+            in software industry nowadays. It is a open source tool for running applications inside the container.
+            Docker helps people able to run any applications built in Docker without installing any application in your computer.
+            <h4>Learning Docker</h4>
+            Learning about Docker is necessary for Computer Science students due to its important.
+            <ol>
+                <li>Resources:
+                <ul>
+                    <li>Visit <a href="https://www.docker.com/">docker.com</a> for the full information about Docker.</li>
+                    <li>Click <a href="https://docs.docker.com/engine/installation/">here</a>
+                        to install Docker on your computer</li>
+                    <li>Recommended webpage for <a href="https://prakhar.me/docker-curriculum/">Docker tutorial</a></li>
+                    <li>If you like book-like tutorial,
+                        <a href="http://wiki.zenoss.org/download/core/drich_slides/DockerSlides.pdf">here</a> is the one.</li>
+                </ul>
+                </li>
+                <li>
+                    Exercise:
+                <ul>
+                    <li><a href="http://docker.atbaker.me/exercises/exercise_0.html">Chain of exercises</a>, provided by Docker</li>
+                    <li><a href="data/docker_exercises.pdf">Docker exercise</a>, by Ignacio Vidal and Abbas Sarvmeily</li>
+                    </ul>
+                </li>
+
+            </ol>
             <h4>Resources</h4>
             Go to this web page
             <a href="https://hub.docker.com/search/?isAutomated=0&isOfficial=0&page=1&pullCount=0&q=latex&starCount=1">Docker Images</a>
@@ -43,11 +69,9 @@
             <h4>Set up:</h4>
             <ol>
                 <li>Clone the recommeded images from git hub pages</li>
-                <li>Set up the docker in your machine. (See the instruction
-                <a href="UsingLatex.html">here</a>)
-                </li>
-                <li>Type "<em>docker pull narf/latex</em>" to build the image</li>
-                <li>Create a latex file named "input.latex"</li>
+                <li>Set up the docker in your machine. </li>
+                <li>Type "<em>docker pull narf/latex</em>" to build the Docker image</li>
+                <li>Create a latex file named "input.latex" in the same directory</li>
                 <li>Type "<em>docker run -i narf/latex < input.latex > output.pdf</em>"
                 to create an output pdf file </li>
                 <li>Check to make sure you got everything right</li>
