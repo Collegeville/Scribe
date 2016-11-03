@@ -1,0 +1,31 @@
+- title: Home
+  url: "/"
+  side: left
+
+- title: "Latex"
+  url: "/UsingLatex/"
+  side: left
+
+- title: "Titles & Abstracts"
+  url: "/TitlesAndAbstractsThatWork/"
+  side: left
+
+- title: "Better Writing"
+  url: "/BetterTechnicalWriting/"
+  side: left
+
+- title: "Position Paper"
+  url: "/PositionPapers/"
+  side: left
+
+- title: "Predictions"
+  url: "/PredictionsThatWork/"
+  side: left
+
+- title: "Retrospectives"
+  url: "/Retrospectives/"
+  side: left
+
+- title: "Search"
+  url: "/search/"
+  side: right

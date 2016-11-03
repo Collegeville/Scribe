@@ -1,0 +1,231 @@
+# ASCII-Font › http://patorjk.com/software/taag/#p=display&f=Slant&t=Phlow
+
+#
+# Build settings
+# - https://github.com/jekyll/jekyll-redirect-from
+#
+
+gems:
+  - jekyll-redirect-from
+  - jekyll-paginate
+
+whitelist:
+  - jekyll-redirect-from
+
+
+#
+#      _____ _ __          _____      __  __  _                 
+#     / ___/(_) /____     / ___/___  / /_/ /_(_)___  ____ ______
+#     \__ \/ / __/ _ \    \__ \/ _ \/ __/ __/ / __ \/ __ `/ ___/
+#    ___/ / / /_/  __/   ___/ /  __/ /_/ /_/ / / / / /_/ (__  ) 
+#   /____/_/\__/\___/   /____/\___/\__/\__/_/_/ /_/\__, /____/  
+#                                                 /____/        
+#
+# Title of your website
+title: "Scibe project"
+
+# The slogan describes your website and is used on homepage in <title> and other important places
+slogan: "Scribe project Effective writing"
+
+# The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
+description: "Scribe project advanced writing tutorial"
+
+# Main author of the website
+# See > authors.yml
+author: duongdo
+
+# This URL identifies the domain.
+url: 'https://collegeville.github.io/Scribe/'
+
+# This URL is the root of the site below the domain.
+baseurl: ''
+
+# This URL is the root of files below the domain.
+filesurl: '/files'
+
+# Software Carpentry-specific configuration values.
+# FIXME: eliminate some of these (duplicate social media information)
+amy_url         : "https://amy.software-carpentry.org/workshops"
+board_inquiries : "board-inquiries@software-carpentry.org"
+contact         : "admin@software-carpentry.org"
+dc_url          : "http://datacarpentry.org"
+facebook_url    : "https://www.facebook.com/SoftwareCarpentry"
+github_url      : "https://github.com/swcarpentry"
+github_io_url   : "http://swcarpentry.github.io"
+paypal_url      : "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MYSDWRR8HWFR6"
+linkedin_url    : "https://www.linkedin.com/grp/home?gid=8279689"
+rss_url         : "http://software-carpentry.org/feed.xml"
+twitter_name    : "@swcarpentry"
+twitter_url     : "https://twitter.com/swcarpentry"
+slack_signup_url: "https://swc-slack-invite.herokuapp.com/"
+msl_url         : "http://mozillascience.org"
+store_url       : "http://www.cafepress.com/swcarpentry"
+pad_url         : "http://pad.software-carpentry.org"
+mailing_lists   : "http://lists.software-carpentry.org"
+flag_size       : 16
+v4_url          : "https://v4.software-carpentry.org"
+releases_io_url : "http://swcarpentry.github.io/swc-releases"
+training_url    : "http://swcarpentry.github.io/instructor-training"
+
+# This is for the editing function in _/includes/improve_content
+# Leave it empty if your site is not on GitHub/GitHub Pages
+# improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
+
+# Logo image (white with transparent background to stand out on blue background)
+logo: "banner.png"
+
+# Paginates all X entries
+paginate: 10
+
+# Pagination path › Important for blog page in /blog/ to work
+paginate_path: "blog/page:num"
+
+# Theme works best with Kramdown (using the table of contents function)
+markdown: kramdown
+permalink: /blog/:year/:month/:title.html
+highlight: pygments
+excerpt_separator: "<!--more-->"
+include:
+    - .htaccess
+exclude:
+    - .sass-cache
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - INSTALL.md
+    - Makefile
+    - vendor
+
+# The language setting is used in /includes/header.html for html-settings
+language: "en"
+
+# Used › default.html front-matter and compress.html
+# Options › http://jch.penibelst.de
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  profile: false
+  ignore:
+    envs: [development]
+
+#
+#       ____       ____            ____
+#      / __ \___  / __/___ ___  __/ / /_
+#     / / / / _ \/ /_/ __ `/ / / / / __/
+#    / /_/ /  __/ __/ /_/ / /_/ / / /_
+#   /_____/\___/_/  \__,_/\__,_/_/\__/
+#
+# Default Settings
+
+defaults:
+  -
+    scope:
+      path: "" 			# an empty string here means all files in the project
+      type: "pages"
+    values:
+      show_meta: false		# Hide metadata for all pages
+      # sidebar:    		# Possible values › left, right › by default there will be no sidebar
+      comments: true
+      author: gvwilson		# Default author for pages
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      show_meta: true		# Show metadata for all posts
+      # sidebar:		# Possible values › left, right › by default there will be no sidebar
+      comments: true
+      author: gvwilson		# Default author for posts
+
+#       _   __            _             __  _
+#      / | / /___ __   __(_)___ _____ _/ /_(_)___  ____
+#     /  |/ / __ `/ | / / / __ `/ __ `/ __/ / __ \/ __ \
+#    / /|  / /_/ /| |/ / / /_/ / /_/ / /_/ / /_/ / / / /
+#   /_/ |_/\__,_/ |___/_/\__, /\__,_/\__/_/\____/_/ /_/
+#                       /____/
+#
+#  Open _data/navigation.yml to adjust the left and right topbar navigation
+#
+
+#     _____ __________
+#    / ___// ____/ __ \
+#    \__ \/ __/ / / / /
+#   ___/ / /___/ /_/ /
+#  /____/_____/\____/    Verify Website to Webmaster Tools
+
+# FIXME: what should this be?
+
+google_author:             "https://plus.google.com/u/0/118311555303973066167"
+google_site_verification:  "Vk0IOJ2jwG_qEoG7fuEXYqv0m2rLa8P778Fi_GrsgEQ"
+bing_webmastertools_id:    "0FB4C028ABCF07C908C54386ABD2D97F"
+# alexa_verify_id:         ""
+
+#       ______            _
+#      / ____/___ __   __(_)________  ____  _____
+#     / /_  / __ `/ | / / / ___/ __ \/ __ \/ ___/
+#    / __/ / /_/ /| |/ / / /__/ /_/ / / / (__  )
+#   /_/    \__,_/ |___/_/\___/\____/_/ /_/____/   Favicon-Crap: Favicons, Chrome, Android & Apple Touch Buttons
+#                                                 More information » https://mathiasbynens.be/notes/touch-icons
+
+# FIXME: look at all of these
+
+
+#       ______                __                __
+#      / ____/___ _________  / /_  ____  ____  / /__
+#     / /_  / __ `/ ___/ _ \/ __ \/ __ \/ __ \/ //_/
+#    / __/ / /_/ / /__/  __/ /_/ / /_/ / /_/ / ,<
+#   /_/    \__,_/\___/\___/_.___/\____/\____/_/|_|      Facebook-Optimization › http://j.mp/fb_optimize
+
+# FIXME: figure out what this is all about
+
+og_image:                           "http://images.phlow.de/phlow/phlow_de-logo-512x.png"
+og_locale:                          "en_EN"
+og_type:                            "website"
+og_title:                           "Feeling Responsive – A Responsive Theme for Jekyll"
+og_description:                     "Feeling Responsive is built on the fabulous Foundation Framework and comes with lots of features to show your content right."
+# og_url:                           ""
+# og_site_name:                     ""
+
+#      _____            _       __   __  ___         ___
+#     / ___/____  _____(_)___ _/ /  /  |/  /__  ____/ (_)___ _
+#     \__ \/ __ \/ ___/ / __ `/ /  / /|_/ / _ \/ __  / / __ `/
+#    ___/ / /_/ / /__/ / /_/ / /  / /  / /  __/ /_/ / / /_/ /
+#   /____/\____/\___/_/\__,_/_/  /_/  /_/\___/\__,_/_/\__,_/
+#
+#  Open _data/socialmedia.yml to adjust the left and right topbar navigation
+#
+
+#        ____  _
+#       / __ \(_)________ ___  _______
+#      / / / / / ___/ __ `/ / / / ___/
+#     / /_/ / (__  ) /_/ / /_/ (__  )
+#    /_____/_/____/\__, /\__,_/____/
+#                    /_/
+#
+# used in _includes/comments
+
+disqus_shortname: research-seminar
+
+#      _____
+#     / ___/____ ___________
+#     \__ \/ __ `/ ___/ ___/
+#    ___/ / /_/ (__  |__  )     More › http://sass-lang.com/
+#   /____/\__,_/____/____/      More › http://jekyllrb.com/docs/assets/#sassscss
+#
+
+sass:
+    sass_dir: _sass
+    style: :compressed
+
+#       ___                __      __  _
+#      /   |  ____  ____ _/ /_  __/ /_(_)_________
+#     / /| | / __ \/ __ `/ / / / / __/ / ___/ ___/
+#    / ___ |/ / / / /_/ / / /_/ / /_/ / /__(__  )
+#   /_/  |_/_/ /_/\__,_/_/\__, /\__/_/\___/____/      https://www.google.com/analytics/
+#                        /____/
+#
+# used in _includes/footer_scripts
+
+google_analytics_tracking_id: UA-37305346-1

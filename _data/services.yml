@@ -1,0 +1,13 @@
+- menu_name: "Services"
+
+- name: "How to Document"
+  url: "https://cse-software.github.io/Howto/index.html"
+  title: "How to Document"
+
+- name: "Effective Software"
+  url: "https://collegeville.github.io/Lex/"
+  title: "Lex project: Effective Software"
+
+# - name: "Atom"
+#   url: "/atom.xml"
+#   title: "Subscribe to Atom Feed"
