@@ -35,7 +35,7 @@ description: "Scribe project advanced writing tutorial"
 author: duongdo
 
 # This URL identifies the domain.
-url: 'https://collegeville.github.io/Scribe/'
+url: 'https://collegeville.github.io'
 
 # This URL is the root of the site below the domain.
 baseurl: ''
