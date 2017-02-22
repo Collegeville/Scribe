@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3488b0c1-b5b7-4883-82d6-2b63856c705f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/UsingLatex.html" afterPath="$PROJECT_DIR$/pages/UsingLatex.html" />
     </list>
     <ignored path="Scribe.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +37,8 @@
       <file leaf-file-name="UsingLatex.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/UsingLatex.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.3031579">
-              <caret line="90" column="59" selection-start-line="90" selection-start-column="59" selection-end-line="90" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.06315789">
+              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -97,7 +98,6 @@
         <option value="$PROJECT_DIR$/pages/PredictionsThatWork.html" />
         <option value="$PROJECT_DIR$/pages/Retrospectives.html" />
         <option value="$PROJECT_DIR$/pages/TitlesAndAbstractsThatWork.html" />
-        <option value="$PROJECT_DIR$/pages/UsingLatex.html" />
         <option value="$PROJECT_DIR$/_data/services.yml" />
         <option value="$PROJECT_DIR$/_site/index.html" />
         <option value="$PROJECT_DIR$/_site/BetterTechnicalWriting/index.html" />
@@ -107,6 +107,7 @@
         <option value="$PROJECT_DIR$/_site/Retrospectives/index.html" />
         <option value="$PROJECT_DIR$/_site/TitlesAndAbstractsThatWork/index.html" />
         <option value="$PROJECT_DIR$/_site/UsingLatex/index.html" />
+        <option value="$PROJECT_DIR$/pages/UsingLatex.html" />
       </list>
     </option>
   </component>
@@ -750,8 +751,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/UsingLatex.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3031579">
-          <caret line="90" column="59" selection-start-line="90" selection-start-column="59" selection-end-line="90" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.06315789">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
           <folding />
         </state>
       </provider>
