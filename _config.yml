@@ -38,7 +38,7 @@ author: duongdo
 url: 'https://collegeville.github.io'
 
 # This URL is the root of the site below the domain.
-baseurl: ''
+baseurl: '/Scribe'
 
 # This URL is the root of files below the domain.
 filesurl: '/files'
