@@ -22,10 +22,10 @@ whitelist:
 #                                                 /____/        
 #
 # Title of your website
-title: "Scibe project"
+title: "Scibe Project"
 
 # The slogan describes your website and is used on homepage in <title> and other important places
-slogan: "Scribe project Effective writing"
+slogan: "Enough words, no more."
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
 description: "Scribe project advanced writing tutorial"
@@ -128,7 +128,7 @@ defaults:
       show_meta: false		# Hide metadata for all pages
       # sidebar:    		# Possible values › left, right › by default there will be no sidebar
       comments: true
-      author: gvwilson		# Default author for pages
+      author: maherou		# Default author for pages
   -
     scope:
       path: ""
@@ -137,7 +137,7 @@ defaults:
       show_meta: true		# Show metadata for all posts
       # sidebar:		# Possible values › left, right › by default there will be no sidebar
       comments: true
-      author: gvwilson		# Default author for posts
+      author: maherou		# Default author for posts
 
 #       _   __            _             __  _
 #      / | / /___ __   __(_)___ _____ _/ /_(_)___  ____
