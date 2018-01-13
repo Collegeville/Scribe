@@ -1,1 +1,3 @@
-# CS373Carpentry
+# Scribe
+
+Content and examples for effective technical writing.
